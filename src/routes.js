@@ -1,5 +1,5 @@
 const express = require('express')
-const carRoutes = require('./controller/carro')
+const car = require('./controller/carro')
 
 const router = express.Router()
 
@@ -10,10 +10,10 @@ router.get('/',async (req,res)=>{
 })
 
 //Rota dos carros
-router.get('/veiculos/:id*?', carRoutes.getCarros)
-router.post('/veiculos', carRoutes.createCarro)
-router.put('/veiculos/:id', carRoutes.putCar)
-router.delete('/veiculos/:id', carRoutes.deleteCar)
+router.get('/veiculos/:id*?', car.getCar)
+router.post('/veiculos', car.createCar)
+router.put('/veiculos/:id', car.putCar)
+router.delete('/veiculos/:id', car.deleteCar)
 
 
 module.exports = router

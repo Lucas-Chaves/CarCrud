@@ -5,7 +5,10 @@
   "author": "Lucas Chaves",
   "license": "MIT",
   "scripts": {
-    "test": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "migrate":"knex migrate:latest",
+    "seed": "knex seed:run",
+    "downdb": "knex migrate:down"
   },
   "dependencies": {
     "cors": "^2.8.5",

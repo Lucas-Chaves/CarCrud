@@ -1,6 +1,6 @@
 const query = require('../../../knex/knex')
 
-const getCarros = async (req, res) => {
+const getCar = async (req, res) => {
     id = req.params.id
     if (id != null) getbyId(req, res)
     else getAllCars(req, res)
@@ -32,4 +32,4 @@ const getbyId = async (req, res) => {
 }
 
 
-module.exports = { getCarros }
+module.exports = { getCar }

@@ -1,14 +1,14 @@
-const { createCarro } = require('./carroCreate');
-const { getCarros } = require('./carroGet')
-const { deleteCar } = require('./carroDelete')
-const { putCar } = require('./carroPut')
+const { createCar } = require('./create');
+const { getCar } = require('./get')
+const { deleteCar } = require('./delete')
+const { putCar } = require('./put')
 
 
 
 
 module.exports = {
-    createCarro,
-    getCarros,
+    createCar,
+    getCar,
     deleteCar,
     putCar
 }

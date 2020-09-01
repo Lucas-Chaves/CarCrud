@@ -1,4 +1,4 @@
-// Update with your config settings.
+require('dotenv').config()
 
 
 
@@ -6,11 +6,11 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      host: "172.17.0.1",
-      port: '4000',
-      user: "root",
-      password: "root",
-      database: "oncar",
+      host: process.env.HOST_DB_DEV,
+      port: process.env.PORT_DB_DEV,
+      user: process.env.USER_DB,
+      password: process.env.PASSWORD_DB,
+      database: process.env.DATABASE_DEV,
       charset: 'utf8'
     },
     migrations: {

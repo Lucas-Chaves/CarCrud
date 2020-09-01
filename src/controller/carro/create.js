@@ -2,7 +2,7 @@ const query = require('../../../knex/knex')
 const moment = require('moment');
 
 
-const createCarro = async (req, res) => {
+const createCar = async (req, res) => {
     //Create a new car
     try {
 
@@ -24,8 +24,6 @@ const createCarro = async (req, res) => {
             ano: ano,
             descricao: descricao,
             vendido: vendido,
-            created_at: moment().format(),
-            updated_at: moment().format()
         })
         await trx.commit();
 
@@ -51,4 +49,4 @@ const createCarro = async (req, res) => {
 }
 
 
-module.exports = { createCarro }
+module.exports = { createCar }

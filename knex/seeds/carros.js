@@ -8,28 +8,22 @@ exports.seed = function (knex, Promise) {
                     veiculo: "Corsa",
                     marca: "GM",
                     ano: 2010,
-                    descricao: "Carro ta zero bala",
+                    descricao: "pimenta ipsum",
                     vendido: false,
-                    created_at: knex.fn.now(),
-                    updated_at: knex.fn.now()
                 },
                 {
                     veiculo: "Corsa",
                     marca: "GM",
                     ano: 2010,
-                    descricao: "Carro ta zero bala",
+                    descricao: "pimenta ipsum",
                     vendido: false,
-                    created_at: knex.fn.now(),
-                    updated_at: knex.fn.now()
                 },
                 {
                     veiculo: "Corsa",
                     marca: "GM",
                     ano: 2010,
-                    descricao: "Carro ta zero bala",
-                    vendido: false,
-                    created_at: knex.fn.now(),
-                    updated_at: knex.fn.now()
+                    descricao: "pimenta ipsum",
+                    vendido: true,
                 }
             ]);
         });

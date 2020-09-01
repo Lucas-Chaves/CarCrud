@@ -1,11 +1,8 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
-const userRouter = require('./src/routes')
-const port = process.env.PORT
-
-
-const knex = require('./knex/knex.js');
+const Router = require('./src/routes')
+const port = process.env.PORT || 3000
 
 //instanciando express e cors para requisicoes.
 const app = express()
@@ -14,12 +11,7 @@ app.use(cors())
 
 //Configuração para aceitar requisições Json e arquivo
 app.use(express.json())
-app.use(userRouter)
-
-
-app.get('/', (request, response) => {
-    response.send('We Did it')
-})
+app.use(Router)
 
 
 //inicando o servidor
